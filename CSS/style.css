@@ -9,12 +9,14 @@ body{
     margin: 0;
     font-family: 'Muli',sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     justify-content: center;
     overflow: hidden;
-    background-color: aqua;
+    background-color: rgb(223, 224, 224);
 }
+
 .container{
     display: flex;
     width: 90vw;
@@ -30,7 +32,7 @@ body{
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: flex 0.7s ease-in 0.2s;
 
 }
 .panel h3{
@@ -46,6 +48,7 @@ body{
 }
 .panel.active h3{
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 
